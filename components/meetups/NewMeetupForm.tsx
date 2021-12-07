@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import Card from '../widgets/Card';
 import classes from './NewMeetupForm.module.css';
 
-type MeetupData = {
+export type MeetupData = {
   title: string;
   image: string;
   address: string;

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React, { FC } from 'react';
 import Card from '../widgets/Card';
 import classes from './MeetupItem.module.css';
@@ -6,11 +5,13 @@ import classes from './MeetupItem.module.css';
 export type Meetup = { id: string; title: string; image: string; address: string };
 
 const MeetupItem: FC<Meetup> = ({ title, address, image }: Meetup) => {
+  const showDetails = () => {};
+
   return (
     <li className={classes.item}>
       <Card>
         <div className={classes.image}>
-          <Image src={image} alt={title} />
+          <img src={image} alt={title} />
         </div>
         <div className={classes.content}>
           <h3>{title}</h3>
