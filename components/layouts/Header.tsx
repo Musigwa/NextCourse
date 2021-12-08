@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { FC } from 'react';
 import { pathNames } from '../../constants';
-import classes from './MainNavigation.module.css';
+import classes from './Header.module.css';
 
 const MainNavigation: FC = () => {
   return (
